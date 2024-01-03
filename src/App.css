@@ -12,15 +12,19 @@ body {
   border: 1px solid #ccc;
   border-radius: 8px;
   margin-left: 14%;
-  max-height:1400px
+  height:100%
 }
 .ag-root-wrapper-body.ag-layout-normal{
   height:500px !important
 }
-.chartDiv{
+.piechartDiv{
   height:700px;
   width:600px;
   margin-left: 24%;
+}
+.barchartDiv{
+  height:700px;
+  width:1200px;
 }
 .loginDiv{
   padding:10px;

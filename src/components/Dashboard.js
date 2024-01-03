@@ -2,15 +2,18 @@ import 'ag-grid-community/styles/ag-grid.css';
 import 'ag-grid-community/styles/ag-theme-alpine.css';
 import 'ag-grid-community/styles/ag-theme-quartz.css';
 import { AgGridReact } from 'ag-grid-react';
-import { ArcElement, Chart } from 'chart.js';
+//import { ArcElement, CategoryScale, Chart, LinearScale } from 'chart.js';
+import { Chart, registerables } from 'chart.js';
 import React, { useCallback, useMemo, useState } from 'react';
-import { Pie } from 'react-chartjs-2';
+import { Bar, Pie } from 'react-chartjs-2';
+
+
 
 const Dashboard = () => {
   const [missions, setMissions] = useState([]);
   const containerStyle = useMemo(() => ({ width: '100%', height: '100%' }), []);
   const gridStyle = useMemo(() => ({ height: '100%', width: '100%' }), []);
-  Chart.register(ArcElement);
+Chart.register(...registerables)
   const onGridReady = useCallback((params) => {
     fetch('https://www.ag-grid.com/example-assets/space-mission-data.json')
     .then((response) => response.json())
@@ -43,7 +46,19 @@ const Dashboard = () => {
   const paginationNumberFormatter = useCallback((params) => {
     return '[' + params.value.toLocaleString() + ']';
   }, []);
-  
+  const rocketNameData = missions.filter((mission) => mission.rocket);
+  const priceData = missions.filter((mission) => mission.price);
+  const barChartData = {
+    labels: missions.map((mission) => mission.company),
+    datasets: [
+      {
+        label: 'Mission Prices',
+        data: missions.map((mission) => mission.price),
+        backgroundColor: 'blue',
+      },
+    ],
+  };
+   console.log(rocketNameData, priceData)
   return (
     <div>
       <h2>Space Missions</h2>
@@ -71,14 +86,21 @@ const Dashboard = () => {
       </div>
     </div>
       </div>
-      <h2>Chart</h2>
-      <div className='chartDiv'>
+      <h2>Pie Chart</h2>
+      <div className='piechartDiv'>
       
       
       {/* Pie Chart */}
       <Pie
        data={pieChartData}
       />
+      </div>
+      <h2>Bar Chart</h2>
+      <div className='barchartDiv'>
+      <Bar
+       data={barChartData}
+      />
+
       </div>
     </div>
   );
