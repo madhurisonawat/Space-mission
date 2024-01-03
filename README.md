@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+## SpaceVue Dashboard
+SpaceVue is a dashboard application for monitoring space mission data. It displays recent space mission information, including mission names, launch companies, locations, dates, times, rocket types, prices, and mission outcomes.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Features
 
-## Available Scripts
+Ag-Grid Table: Displays space mission data in a tabular format using Ag-Grid. 
 
-In the project directory, you can run:
+Pie Chart: Shows the proportion of successful and unsuccessful missions.
 
-### `npm start`
+Bar Chart: Displays a bar chart of mission prices based on rocket types.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+React.js: Frontend library for building user interfaces.
 
-### `npm test`
+Ag-Grid: JavaScript data grid library for displaying tables.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Chart.js: Simple yet flexible JavaScript charting library for charts.
 
-### `npm run build`
+react-chartjs-2: React wrapper for Chart.js.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Images
+![Screenshot from 2024-01-03 21-43-05](https://github.com/madhurisonawat/Space-mission/assets/63995668/a75d1ded-2ab2-40e5-a43a-1f2616f1e040)
+![Screenshot from 2024-01-03 21-44-13](https://github.com/madhurisonawat/Space-mission/assets/63995668/9cd103b4-9acc-4f75-8796-7d37f529230b)
+![Screenshot from 2024-01-03 21-44-23](https://github.com/madhurisonawat/Space-mission/assets/63995668/2864e116-606f-48df-bf62-3c493a0427bf)
+![Screenshot from 2024-01-03 21-44-29](https://github.com/madhurisonawat/Space-mission/assets/63995668/a7b03477-36d8-402a-beec-5ad69ba81a66)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
