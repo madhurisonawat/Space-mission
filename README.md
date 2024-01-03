@@ -19,6 +19,9 @@ Chart.js: Simple yet flexible JavaScript charting library for charts.
 
 react-chartjs-2: React wrapper for Chart.js.
 
+# Deployed url of space-vue dashboard 
+https://space-mission-dashboard.netlify.app/
+
 # Images
 ![Screenshot from 2024-01-03 21-43-05](https://github.com/madhurisonawat/Space-mission/assets/63995668/a75d1ded-2ab2-40e5-a43a-1f2616f1e040)
 ![Screenshot from 2024-01-03 21-44-13](https://github.com/madhurisonawat/Space-mission/assets/63995668/9cd103b4-9acc-4f75-8796-7d37f529230b)
